@@ -1,0 +1,171 @@
+<!-- prvy navrh -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+@keyframes fadePink {
+    0%   { color: #f8d8e8; }
+    100% { color: #E00079; }
+}
+
+.foundation-counter {
+    font-size: 11pt;
+    color: #230f15;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.foundation-counter .counter-animated {
+    font-size: 15pt;
+    font-weight: bold;
+    animation: fadePink 2s ease-in forwards;
+}
+
+.foundation-counter .counter-plus {
+    font-size: 12pt;
+    vertical-align: baseline;
+    font-weight: bold;
+    animation: fadePink 2s ease-in forwards;
+}
+</style>
+<div class="foundation-banner section">
+    <div class="foundation-banner__wrap foundation-banner__content">
+        <p class="foundation-counter">Vďaka vám sme predali už
+
+
+            <span id="counter-units" class="counter-animated">0</span>
+
+
+            <span class="counter-plus">+</span>
+            kusov a vyzbierali
+
+
+            <span id="counter-euros" class="counter-animated">0</span>
+
+
+            <span class="counter-plus">+</span> eur.</p>
+    </div>
+</div>
+
+<p>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+        const unitsTarget = 880;
+        const eurosTarget = 4400;
+        const duration = 2000;
+        const steps = 100;
+        const incrementUnits = unitsTarget / steps;
+        const incrementEuros = eurosTarget / steps;
+        const interval = duration / steps;
+
+        let currentUnits = 0;
+        let currentEuros = 0;
+
+        const elUnits = document.getElementById("counter-units");
+        const elEuros = document.getElementById("counter-euros");
+
+        const timer = setInterval(() => {
+            currentUnits += incrementUnits;
+            currentEuros += incrementEuros;
+
+            if (currentUnits >= unitsTarget && currentEuros >= eurosTarget) {
+                currentUnits = unitsTarget;
+                currentEuros = eurosTarget;
+                clearInterval(timer);
+            }
+
+            elUnits.textContent = Math.floor(currentUnits).toLocaleString('sk-SK');
+            elEuros.textContent = Math.floor(currentEuros).toLocaleString('sk-SK');
+        }, interval);
+    });</script>
+</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <style>
+        .counter-box {
+          display: flex;
+          align-items: center;
+          background-color: #E00079;
+          border-radius: 16px;
+          padding: 25px;
+          margin: 20px 0;
+        }
+        
+        .counter-box-text {
+          font-size: 14pt;
+          color: white;
+          line-height: 1.4;
+          font-weight: 500;
+        }
+        
+        .counter-animated {
+          font-weight: bold;
+          font-size: 16pt;
+          color: white;
+        }
+        
+        .counter-plus {
+          font-size: 14pt;
+          vertical-align: baseline;
+          font-weight: bold;
+          color: white;
+        }
+        
+      
+        </style>
+        
+        <div class="counter-box">
+          <div class="counter-box-text">
+            Vďaka vám sme predali už 
+            <span id="counter-units" class="counter-animated">0</span><span class="counter-plus">+</span> kusov 
+            a vyzbierali 
+            <span id="counter-euros" class="counter-animated">0</span><span class="counter-plus">+</span> eur.
+          </div>
+        </div>
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const unitsTarget = 880;
+          const eurosTarget = 4400;
+          const duration = 2000;
+          const steps = 100;
+          const incrementUnits = unitsTarget / steps;
+          const incrementEuros = eurosTarget / steps;
+          const interval = duration / steps;
+        
+          let currentUnits = 0;
+          let currentEuros = 0;
+        
+          const elUnits = document.getElementById("counter-units");
+          const elEuros = document.getElementById("counter-euros");
+        
+          const timer = setInterval(() => {
+            currentUnits += incrementUnits;
+            currentEuros += incrementEuros;
+        
+            if (currentUnits >= unitsTarget && currentEuros >= eurosTarget) {
+              currentUnits = unitsTarget;
+              currentEuros = eurosTarget;
+              clearInterval(timer);
+            }
+        
+            elUnits.textContent = Math.floor(currentUnits).toLocaleString('sk-SK');
+            elEuros.textContent = Math.floor(currentEuros).toLocaleString('sk-SK');
+          }, interval);
+        });
+    </script>
+</body>
+</html>

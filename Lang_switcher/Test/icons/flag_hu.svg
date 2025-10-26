@@ -1,0 +1,11 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="Flag of Hungary">
+  <mask id="a"><rect width="24" height="24" rx="2" fill="#fff"/></mask>
+  <g mask="url(#a)">
+    <path d="M1.66602 5.66669H22.3327V18.3334H1.66602V5.66669Z" fill="#CD2A3E"/>
+    <path d="M1.66602 10H22.3327V14H1.66602V10Z" fill="#FFFFFF"/>
+    <path d="M1.66602 14H22.3327V18.3334H1.66602V14Z" fill="#436F4D"/>
+  </g>
+  <rect x="1.16602" y="5.16663" width="21.6667" height="13.6667" rx="2.5" stroke="#FCE7F2"/>
+</svg>

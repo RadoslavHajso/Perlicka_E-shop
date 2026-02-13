@@ -1,0 +1,6 @@
+  /* KOSIK uprava baner - bonusovy program*/
+  #cart-wrapper .mehub-bonus-cart-container .card{
+    margin-bottom: 25px !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+  }

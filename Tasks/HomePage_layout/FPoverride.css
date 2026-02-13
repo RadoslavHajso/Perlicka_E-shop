@@ -1,0 +1,10 @@
+/* HOMEPAGE – zrusenie margin na adv banneroch */
+body.type-index .adv-banner__wrap{
+  margin: 0 !important;
+}
+
+/* HOMEPAGE – zrusenie margin na nasi zakaznici */
+body.type-index .latest-contribution-box{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}

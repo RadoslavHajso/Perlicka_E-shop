@@ -1,0 +1,42 @@
+/* KOSIK – Product detail buttons */
+
+/* Kupit teraz – farba + centrovanie */
+.add-to-cart__buttons-wrapper .express-checkout-button{
+    background: #04b405 !important;
+    border-color: #66ff66 !important;
+    color: #fff !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+  
+/* odstranenie sipky/ikonu > */
+.add-to-cart__buttons-wrapper .express-checkout-button::before,
+.add-to-cart__buttons-wrapper .express-checkout-button::after{
+    content: none !important;
+    display: none !important;
+}
+  
+.add-to-cart__buttons-wrapper .express-checkout-button > span{
+    display: none !important;
+}
+
+/* KOSIK - hover */
+.add-to-cart__buttons-wrapper .express-checkout-button:hover{
+ color: #fff !important;
+ background-color: #0e8c02 !important;
+ border-color: #0ea000 !important;
+}
+
+@media (min-width: 480px){
+    .add-to-cart__buttons-wrapper{
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+    }
+  
+    .add-to-cart__buttons-wrapper > button{
+      width: 100% !important;
+    }
+  }

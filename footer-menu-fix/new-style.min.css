@@ -1,0 +1,67 @@
+/*Radoslav Hajso 4.5.2026*/
+@media (max-width: 767px) {
+  #footer [class*="custom-footer__section"] > h3.pageElement__heading {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 0.5em !important;
+    margin: 0 !important;
+    font-size: 1.25rem !important;
+    line-height: 1.2em !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    cursor: pointer !important;
+  }
+
+  #footer [class*="custom-footer__section"] > h3.pageElement__heading::after {
+    content: "" !important;
+    display: block !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-right: 2px solid #e00d79 !important;
+    border-bottom: 2px solid #e00d79 !important;
+    transform: rotate(45deg) !important;
+    transition: transform 0.15s ease-out !important;
+    margin-right: 4px !important;
+  }
+
+  #footer [class*="custom-footer__section"] > h3.pageElement__heading.--active::after {
+    transform: rotate(225deg) !important;
+  }
+
+  #footer [class*="custom-footer__section"] .news-item-widget {
+    display: none !important;
+  }
+
+  #footer [class*="custom-footer__section"].--active .news-item-widget {
+    display: block !important;
+  }
+
+  #footer [class*="custom-footer__section"] .news-item-widget h4.newsItemWidget__heading,
+  #footer [class*="custom-footer__section"] .news-item-widget h5.newsItemWidget__heading {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+  }
+
+  #footer [class*="custom-footer__section"] .news-item-widget h4.newsItemWidget__heading::after,
+  #footer [class*="custom-footer__section"] .news-item-widget h5.newsItemWidget__heading::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  #footer [class*="custom-footer__section"] .news-item-widget h4.newsItemWidget__heading a,
+  #footer [class*="custom-footer__section"] .news-item-widget h5.newsItemWidget__heading a {
+    display: block !important;
+    padding: 0.625em 0.625em 0.625em 1.75em !important;
+    font-size: 1rem !important;
+    line-height: 1.5em !important;
+    font-weight: 500 !important;
+    color: #645559 !important;
+  }
+}

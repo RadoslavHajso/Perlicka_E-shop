@@ -1,0 +1,6 @@
+/* IBA PL verzia + IBA stránka /kontakt */
+html[lang="pl"] body.in-kontakt .content-inner {
+  max-width: unset !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
